@@ -1,0 +1,38 @@
+<footer class="footer" role="contentinfo">
+
+  <a
+    class="footer-logo"
+    href="{{ site.url }}" aria-hidden="true">
+    <img src="{{ "/static/img/submark.svg" | relative_url }}"
+    alt="Biørnegildet {{ site.conf_year }} logo" />
+  </a>
+
+  <div class="row column">
+    <ul class="social-icons">
+      <li>
+        <a class="twitter" href="https://instagram.com/biornegildet2025">
+          <svg class="social-icon">
+            <title>Twitter</title>
+            <use xlink:href="#instagram-icon"></use>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a class="facebook" href="https://www.facebook.com/gildet25/">
+          <svg class="social-icon">
+            <title>Facebook</title>
+            <use xlink:href="#facebook-icon"></use>
+          </svg>
+        </a>
+      </li>
+</ul>
+
+    <p class="text-center">
+      <strong>
+      Lurer du på noe, ta kontakt:
+        <a
+          href="mailto:{{site.contact_us_email}}">{{site.contact_us_email}}</a>
+      </strong>
+    </p>
+  </div>
+</footer>

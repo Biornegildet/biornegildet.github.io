@@ -1,0 +1,46 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% seo %}{% capture meta %}
+{% endcapture %}{{ meta | strip_newlines }}
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700|Rubik:400,500&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/main.css">
+
+    <!-- favicon
+    ================================================== -->
+    <link href="/static/favicons/favicon.ico" rel=icon type="image/x-icon">
+    <link href="/static/favicons/bg_u_tekst_rund.png" rel=icon type="image/png">
+    <link href="/static/favicons/bg_tekst_fokus.png" rel="bg_tekst_fokus">
+  </head>
+  <body class="{{ page.layout }}-page">
+   {% include social-icons.html %}
+
+    <div class="off-canvas-wrapper">
+      <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+        <div class="off-canvas position-right" id="offCanvasRight" data-off-canvas data-position="right">
+            <ul class="vertical menu drilldown" data-drilldown>
+              {% include nav.html %}
+            </ul>
+        </div>
+
+        <div class="off-canvas-content" data-off-canvas-content>
+          {% include titlebar.html %}
+
+          {{ content }}
+
+          {% include footer.html %}
+        </div><!-- end .off-canvas-content -->
+      </div><!-- end .off-canvas-wrapper-inner -->
+    </div><!-- end .off-canvas-wrapper -->
+
+    <!-- Loading JavaScripts
+    ================================================== -->
+    <script src="/static/main.js"></script>
+    <script src="//instant.page/5.1.0" type="module" integrity="sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw"></script> <!-- JiT preloading -->
+    <script src="//unpkg.com/@github/time-elements@latest?module" type="module"></script>
+    {% include analytics.html %}
+  </body>
+</html>

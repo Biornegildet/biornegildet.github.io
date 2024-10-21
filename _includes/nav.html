@@ -1,0 +1,29 @@
+<li><a href="/foredrag/">Program</a></li>
+<li><a href="/nyheter/">Nyheter</a></li>
+<li><a href="/sponsorer/">Sponsorer</a></li>
+<!-- <li><a href="/jobs/">Jobs Board</a></li> -->
+<li class="is-dropdown-submenu-parent">
+  <a href="/om/" aria-haspopup="true" aria-expanded="false">Om</a>
+  <ul class="menu vertical nested">
+    <li><a href="/om/">Om Biørnegildet</a></li>
+    <li><a href="/styret/">Styret</a></li>
+    <li><a href="/foredrag/">Foredragsholdere</a></li>
+  </ul>
+</li>
+
+<script type="text/javascript">
+  var menuItems = document.querySelectorAll('li.is-dropdown-submenu-parent');
+  Array.prototype.forEach.call(menuItems, function(el, i){
+    el.querySelector('a').addEventListener("click",  function(event){
+      if (this.parentNode.className == "has-submenu") {
+        this.parentNode.className = "has-submenu open";
+        this.setAttribute('aria-expanded', "true");
+      } else {
+        this.parentNode.className = "has-submenu";
+        this.setAttribute('aria-expanded', "false");
+      }
+      event.preventDefault();
+      return false;
+    });
+  });
+</script>
