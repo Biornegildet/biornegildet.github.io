@@ -113,9 +113,6 @@ title: Fult program
     <ul class="schedule">
       {% for post in site.schedule %}
         {% capture day %}{{ post.date | date: "%A" }}{% endcapture %}
-        {% if day == 'Thursday' %}
-          {% include schedule-sprints-day.html %}
-        {% endif %}
       {% endfor %}
     </ul>
   </div>
@@ -134,9 +131,6 @@ title: Fult program
     <ul class="schedule">
       {% for post in site.schedule %}
         {% capture day %}{{ post.date | date: "%A" }}{% endcapture %}
-        {% if day == 'Friday' %}
-          {% include schedule-sprints-day.html %}
-        {% endif %}
       {% endfor %}
     </ul>
   </div>
