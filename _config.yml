@@ -2,7 +2,8 @@ title: Biørnegildet 2025
 email: gildestyret@rf.uio.no
 description: |
   Biørnegildet 2025 - 17. - 22. Oktober 2025!
-url: "https://peterhpo.github.io/gilde25.github.io"
+baseurl: "/gilde25.github.io"
+url: "https://peterhpo.github.io"
 github_username:  peterhpo
 
 relative_permalinks: false

@@ -7,7 +7,7 @@
 {% seo %}{% capture meta %}
 {% endcapture %}{{ meta | strip_newlines }}
     <link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700|Rubik:400,500&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/static/main.css">
+    <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/static/main.css">
 
     <!-- favicon
     ================================================== -->
@@ -38,7 +38,7 @@
 
     <!-- Loading JavaScripts
     ================================================== -->
-    <script src="/static/main.js"></script>
+    <script src="{{ site.url }}{{ site.baseurl }}/static/main.js"></script>
     <script src="//instant.page/5.1.0" type="module" integrity="sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw"></script> <!-- JiT preloading -->
     <script src="//unpkg.com/@github/time-elements@latest?module" type="module"></script>
     {% include analytics.html %}
