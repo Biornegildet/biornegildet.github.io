@@ -1,0 +1,142 @@
+---
+description: Biørnegildet 2025 | Program
+heading: Program
+layout: default
+permalink: /program/
+published: false
+sitemap: false
+title: Program
+---
+
+<nav class="schedule-nav">
+  <span
+    class="schedule-nav-title">Gå til:</span>
+
+  <ul
+    class="schedule-nav-list"
+    id="ScheduleNav">
+    <li><a href="#Mandag">Mandag<br>17. februar</a></li>
+    <li><a href="#Tirsdag">Tirsdag<br>18. februar</a></li>
+    <li><a href="#Onsdag">Onsdag<br>19. februar</a></li>
+    <li><a href="#Torsdag">Torsdag<br>20. februar</a></li>
+    <li><a href="#Fredag">Fredag<br>21. februar</a></li>
+    <li><a href="#Lørdag">Lørdag<br>22. februar</a></li>
+  </ul>
+</nav>
+
+<!-- Mandag -->
+<section class="section-pad schedule" id="Mandag">
+  <div class="row column">
+    <h2 class="day">Mandag - 17. februar</h2>
+    <!-- <p class="lead">
+      Tutorials are a separate registration and are $195 per session. {% comment %}Buy <a href="{{ site.ticket_link }}">tutorial tickets</a> before they sell out!{% endcomment %}
+    </p> -->
+    <ul class="schedule">
+      {% for post in site.schedule %}
+        {% capture day %}{{ post.date | date: "%A" }}{% endcapture %}
+        {% if day == 'Monday' %}
+          {% include arrangement.html %}
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+<!-- Mandag -->
+
+<!-- Tirsdag -->
+<section class="section-pad schedule" id="Tirsdag">
+  <div class="row column">
+    <h2 class="day">Tirsdag - 18. februar</h2>
+    <ul class="schedule">
+      {% for post in site.schedule %}
+        {% capture day %}{{ post.date | date: "%A" }}{% endcapture %}
+        {% if day == 'Tuesday' %}
+          {% include arrangement.html %}
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+<!-- Tirsdag -->
+
+<!-- Onsdag -->
+<section class="section-pad schedule" id="Onsdag">
+  <div class="row column">
+    <h2 class="day">Onsdag - 19. februar</h2>
+    {% comment %}
+    <p class="lead">
+      Tutorials are a separate registration and are TBD per session. Buy tutorial tickets before they sell out!
+    </p>
+    {% endcomment %}
+    <ul class="schedule">
+      {% for post in site.schedule %}
+        {% capture day %}{{ post.date | date: "%A" }}{% endcapture %}
+        {% if day == 'Wednesday' %}
+          {% include arrangement.html %}
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+<!-- Onsdag -->
+
+<!-- Torsdag -->
+<section class="section-pad schedule" id="Torsdag">
+  <div class="row column">
+    <h2 class="day">Torsdag - 20. februar</h2>
+    {% comment %}
+    <p class="lead">
+      Tutorials are a separate registration and are TBD per session. Buy tutorial tickets before they sell out!
+    </p>
+    {% endcomment %}
+    <ul class="schedule">
+      {% for post in site.schedule %}
+        {% capture day %}{{ post.date | date: "%A" }}{% endcapture %}
+        {% if day == 'Thursday' %}
+          {% include arrangement.html %}
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+<!-- Torsdag -->
+
+<!-- Fredag -->
+<section class="section-pad schedule" id="Fredag">
+  <div class="row column">
+    <h2 class="day">Fredag - 21. februar</h2>
+    {% comment %}
+    <p class="lead">
+      Tutorials are a separate registration and are TBD per session. Buy tutorial tickets before they sell out!
+    </p>
+    {% endcomment %}
+    <ul class="schedule">
+      {% for post in site.schedule %}
+        {% capture day %}{{ post.date | date: "%A" }}{% endcapture %}
+        {% if day == 'Friday' %}
+          {% include arrangement.html %}
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+<!-- Fredag -->
+
+<!-- Lørdag -->
+<section class="section-pad schedule" id="Lørdag">
+  <div class="row column">
+    <h2 class="day">Lørdag - 22. februar</h2>
+    <p class="lead">
+      Denne dagen skjer kun den tradisjonelle avslutningsfesten, <b>Biørneballet</b>. <br>For mer info se <a href="/ball">siden om ballet</a>.
+    </p>
+    <ul class="schedule">
+      {% for post in site.schedule %}
+        {% capture day %}{{ post.date | date: "%A" }}{% endcapture %}
+        {% if day == 'Saturday' %}
+          {% include arrangement.html %}
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+<!-- Lørdag -->

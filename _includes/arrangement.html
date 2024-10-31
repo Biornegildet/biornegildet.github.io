@@ -1,0 +1,55 @@
+<li class="schedule-entry">
+  {% unless post.room == 'dummy-rom' %}
+    {% assign linkStart = "" %}
+    {% assign linkEnd = "" %}
+    
+    {% if post.permalink %}
+      {% assign linkStart = '<a href="' | append: post.permalink | append: '" class="event-content">' %}
+      {% assign linkEnd = "</a>" %}
+    {% elsif post.link %}
+      {% assign linkStart = '<a href="' | append: post.link | append: '" class="event-content">' %}
+      {% assign linkEnd = "</a>" %}
+    {% endif %}
+
+    {{ linkStart }}
+      <section class="event">
+        {% if post.title %}
+          <h3 class="event-title">{{ post.title }}</h3>
+        {% endif %}
+        
+        {% if post.date %}
+          <p class="time">{{ post.date | date: "%H:%M" }}</p>
+        {% endif %}
+        
+        {% if post.room %}
+          <p class="location">{{ post.room }}</p>
+        {% endif %}
+        
+        {% if post.presenters %}
+          <p class="event-byline">
+            {% for presenter in post.presenters %}
+              {% if presenter.photo_url %}
+                <img class="avatar" src="{{ presenter.photo_url }}" alt="Photo of {{ presenter.name }}" />
+              {% endif %}
+              {{ presenter.name }}
+              {% if presenter.pronouns %}
+                ({{ presenter.pronouns }})
+              {% endif %}
+              {% if forloop.last == false %}
+                , 
+              {% endif %}
+            {% endfor %}
+          </p>
+        {% endif %}
+        
+        {% if post.abstract %}
+          <p class="description">{{ post.abstract }}</p>
+        {% endif %}
+        
+        {% if post.image %}
+          <img src="{{ post.image }}" alt="Illustrerende bilde for arrangementet {{ post.title }}">
+        {% endif %}
+      </section>
+    {{ linkEnd }}
+  {% endunless %}
+</li>

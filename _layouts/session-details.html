@@ -7,12 +7,12 @@ layout: base
     {% if page.heading %}{{ page.heading }}{% else %}{{ page.title }}{% endif %}
   </h1>
   <p class="lead">
-    <local-time datetime="{{ page.date | date_to_xmlschema }}" month="short" day="numeric" hour="numeric" minute="numeric"
+    <local-time datetime="{{ page.date | date_to_xmlschema }}" hour="numeric" minute="numeric" day="numeric" month="short"
       time-zone-name="short">
-      {{ page.date | date: "%b %d %l:%M %p %Z" }}
+      {{ page.date | date: "%H:%M %d. %b" }}
     </local-time>
-    <a href="https://time.is/compare/{{ page.date | date: "%I%M%p_%d_%B_%Y" }}_in_Chicago" aria-label="View talk time on time.is">:calendar:</a>
-    {% if page.end_date %} to {{ page.end_date | date: "%l:%M %P" }}{% endif %}
+    <a href="https://time.is/compare/{{ page.date | date: "%I%M%p_%d_%B_%Y" }}_in_Oslo" aria-label="View talk time on time.is">:calendar:</a>
+    {% if page.end_date %} to {{ page.end_date | date: "%H:%M" }}{% endif %}
     {% comment %}, in {{ page.room }}{% endcomment %}
   </p>
 </header>
@@ -20,22 +20,17 @@ layout: base
 <div class="content subpage-content">
   <div class="row">
     <div class="column medium-10 medium-centered" markdown="1">
-      <h2 style="text-transform:capitalize;">Om dette
+      <h2>Om
         {% case page.category %}
             {% when "foredrag" %}
-              Foredrag
+              dette foredraget
+            {% when "fest" %}
+              denne festen
             {% else %}
-              {{ page.category|capitalize }}
+              dette {{ page.category }}
         {% endcase %}
       </h2>
       {{ content }}
-
-      {% comment %}
-      <a href="{{ site.ticket_link }}" class="button">
-        Buy Tickets Now
-      </a>
-      {% endcomment %}
-
     </div>
   </div><!-- end .row -->
 
@@ -101,7 +96,8 @@ layout: base
   {% endfor %}
 </div>
 
+{% else %}
+  <div class="v-pad-bottom-more"></div>
 {% endif %}
-
 
 </div><!-- end .content -->

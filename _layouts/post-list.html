@@ -4,7 +4,7 @@ permalink: /nyheter/
 ---
 
 {% for post in site.posts %}
-  {% unless post.hidden or post.category == 'talk' or post.category == 'tutorial' %}
+  {% unless post.hidden or post.category == 'foredrag' or post.category == 'workshop' %}
   <article class="post-item">
     <time class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</time>
     <h2 class="post-title">
