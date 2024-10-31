@@ -22,7 +22,7 @@ permalink: /sponsorer/
       <div class="callout text-center partner-cta-box">
         <h2>Looking for a job?</h2>
         <p>Some of our sponsors are hiring! Take a look at our virtual jobs board to learn more.</p>
-        <a href="/jobs/" class="button">Check out our jobs board</a>
+        <a href="{{ site.url }}{{ site.baseurl }}/jobs/" class="button">Check out our jobs board</a>
       </div>
     </div>
   </div>
@@ -41,7 +41,7 @@ permalink: /sponsorer/
                 <a href="{{ sponsor.url_target }}" rel="sponsored">
                   <img
                     class="partner-logo {{ sponsor.logo_orientation }}"
-                    src="{{ sponsor.logo }}"
+                    src="{{ site.url }}{{ site.baseurl }}{{ sponsor.logo }}"
                     alt="{{ sponsor.name }} Logo" />
                 </a>
               </div>
@@ -49,7 +49,7 @@ permalink: /sponsorer/
                 <h3 class="partner-name"><a href="{{ sponsor.url_target }}" rel="sponsored">{{ sponsor.name }}</a></h3>
                 {% capture sponsor_description %}{{ sponsor.description }}{: .partner-description }{% endcapture %}
                 {{ sponsor_description | markdownify }}
-                {% if sponsor.hiring %}<a href="/jobs/" class="button">{{ sponsor.name }} is hiring!</a>{% endif %}
+                {% if sponsor.hiring %}<a href="{{ site.url }}{{ site.baseurl }}/jobs/" class="button">{{ sponsor.name }} is hiring!</a>{% endif %}
               </div>
             </div>
           {% endunless %}

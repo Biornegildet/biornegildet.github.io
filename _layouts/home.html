@@ -15,7 +15,7 @@ layout: base
           class="event-info-date">17-22 februar, 2025</strong>
       </div>
 
-      <a class="button" href="/program/">Fullt program</a>
+      <a class="button" href="{{ site.url }}{{ site.baseurl }}/program/">Fullt program</a>
     </div>
   </div>
 </header>
@@ -28,7 +28,7 @@ layout: base
     <p class="lead column large-9 large-centered text-center">Temaer</p>
 
     <div class="date-card medium-4 column">
-      <a href="/program/">
+      <a href="{{ site.url }}{{ site.baseurl }}/program/">
         <div class="dates">
           <div class="month">Feb</div>
           <div class="days">17-18</div>
@@ -41,7 +41,7 @@ layout: base
     </div>
 
     <div class="date-card medium-4 column">
-      <a href="/program/">
+      <a href="{{ site.url }}{{ site.baseurl }}/program/">
         <div class="dates">
           <div class="month">Feb</div>
           <div class="days">19</div>
@@ -54,7 +54,7 @@ layout: base
     </div>
 
     <div class="date-card medium-4 column">
-      <a href="/program/">
+      <a href="{{ site.url }}{{ site.baseurl }}/program/">
         <div class="dates">
           <div class="month">Feb</div>
           <div class="days">20-21</div>
@@ -82,7 +82,7 @@ layout: base
           />
         <div class="card-section">
             <h3 class="card-title">Foredrag</h3>
-            <p>Hør forderag om kule temaer. <br>Se alle <strong><a href="/foredrag/">foredragene</a></strong></p>
+            <p>Hør forderag om kule temaer. <br>Se alle <strong><a href="{{ site.url }}{{ site.baseurl }}/foredrag/">foredragene</a></strong></p>
         </div>
       </div>
     </div>
@@ -95,7 +95,7 @@ layout: base
           />
         <div class="card-section">
           <h3 class="card-title">Bidra som frivillig</h3>
-          <p>Bidra å lage {{site.title}}. <br>Se informasjon for hvordan <strong><a href="/frivillig/">bli frivillig</a></strong>!</p>
+          <p>Bidra å lage {{site.title}}. <br>Se informasjon for hvordan <strong><a href="{{ site.url }}{{ site.baseurl }}/frivillig/">bli frivillig</a></strong>!</p>
       </div>
       </div>
     </div>
@@ -108,7 +108,7 @@ layout: base
           />
         <div class="card-section">
           <h3 class="card-title">Program</h3>
-          <p>Se det <strong><a href="/program">fulle programmet</a></strong> for festivalen. <br>Det blir både foredrag og festligheter.</p>
+          <p>Se det <strong><a href="{{ site.url }}{{ site.baseurl }}/program/">fulle programmet</a></strong> for festivalen. <br>Det blir både foredrag og festligheter.</p>
         </div>
       </div>
     </div>
@@ -121,7 +121,7 @@ layout: base
           />
         <div class="card-section">
             <h3 class="card-title">Støtt {{site.title}}</h3>
-            <p>Se infosiden for hvordan <strong><a href="/sponsorer/information/">støtte {{site.title}}</a></strong>!</p>
+            <p>Se infosiden for hvordan <strong><a href="{{ site.url }}{{ site.baseurl }}/sponsorer/information/">støtte {{site.title}}</a></strong>!</p>
         </div>
       </div>
     </div>
@@ -141,7 +141,7 @@ layout: base
           <div class="card-section">
             <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
             <h3>
-              <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
+              <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title | escape }}</a>
             </h3>
           </div>
         </div>
@@ -152,7 +152,7 @@ layout: base
 
   <div class="row v-pad-top">
     <div class="medium-4 column medium-centered text-center">
-      <a class="button" href="/nyheter/">Les nyheter</a>
+      <a class="button" href="{{ site.url }}{{ site.baseurl }}/nyheter/">Les nyheter</a>
     </div>
   </div>
 </section>
@@ -161,7 +161,7 @@ layout: base
 
 <div class="photo-hero-inline curve-top tint-brand-color1">
   <img
-    src="/static/img/konsert_2022.png"
+    src="{{ site.url }}{{ site.baseurl }}/static/img/konsert_2022.png"
     alt="Bilde av konsert under Biørnegildet 2022"
     loading="lazy"
      />

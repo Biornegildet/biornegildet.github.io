@@ -11,7 +11,7 @@ layout: base
     <div class="column medium-10 medium-centered large-9 large-centered">
       {% if page.post_photo_url %}
         <img
-          src="{{ page.post_photo_url }}"
+          src="{{ site.url }}{{ site.baseurl }}{{ page.post_photo_url }}"
           alt="{{ page.post_photo_alt }}"
           class="job-photo v-pad-bottom" />
       {% endif %}

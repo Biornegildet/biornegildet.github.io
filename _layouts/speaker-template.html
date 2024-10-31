@@ -12,7 +12,7 @@
     <div class="speaker-template">
       {% if page.photo_url != blank %}
         <img
-          src="{{ page.photo_url }}"
+          src="{{ site.url }}{{ site.baseurl }}{{ page.photo_url }}"
           width="520"
           alt="{{ page.name }}"
           class="speaker-template-photo" />

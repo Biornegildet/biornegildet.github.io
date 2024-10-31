@@ -10,7 +10,7 @@ permalink: /nyheter/
     <h2 class="post-title">
       <a
         class="post-link"
-        href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
+        href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title | escape }}</a>
     </h2>
     {% if forloop.first %}
       {{ post.excerpt }}

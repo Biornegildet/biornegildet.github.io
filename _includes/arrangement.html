@@ -29,7 +29,7 @@
           <p class="event-byline">
             {% for presenter in post.presenters %}
               {% if presenter.photo_url %}
-                <img class="avatar" src="{{ presenter.photo_url }}" alt="Photo of {{ presenter.name }}" />
+                <img class="avatar" src="{{ site.url }}{{ site.baseurl }}{{ presenter.photo_url }}" alt="Photo of {{ presenter.name }}" />
               {% endif %}
               {{ presenter.name }}
               {% if presenter.pronouns %}
@@ -47,7 +47,7 @@
         {% endif %}
         
         {% if post.image %}
-          <img src="{{ post.image }}" alt="Illustrerende bilde for arrangementet {{ post.title }}">
+          <img src="{{ site.url }}{{ site.baseurl }}{{ post.image }}" alt="Illustrerende bilde for arrangementet {{ post.title }}">
         {% endif %}
       </section>
     {{ linkEnd }}

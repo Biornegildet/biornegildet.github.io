@@ -49,7 +49,7 @@ layout: base
         {% if presenter.photo_url != blank %}
           <img
             class="thumbnail"
-            src="{{ presenter.photo_url }}"
+            src="{{ site.url }}{{ site.baseurl }}{{ presenter.photo_url }}"
             alt="Photo of {{ presenter.name }}" />
         {% endif %}
       </div>

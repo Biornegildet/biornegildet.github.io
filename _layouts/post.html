@@ -13,7 +13,7 @@ layout: base
 
       {% if page.post_photo_url %}
         <img
-          src="{{ page.post_photo_url }}"
+          src="{{ site.url }}{{ site.baseurl }}{{ page.post_photo_url }}"
           alt="{{ page.post_photo_alt }}"
           class="post-photo" />
       {% endif %}

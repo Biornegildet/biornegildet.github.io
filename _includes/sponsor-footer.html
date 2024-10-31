@@ -2,7 +2,7 @@
   <h3 class="v-pad-bottom text-center">Sponsorer</h3>
     <div class="row v-pad-top">
       <div class="medium-6 column medium-centered text-center">
-        <a href="/sponsorer/information/" class="button">Støtt {{site.title}}</a>
+        <a href="{{ site.url }}{{ site.baseurl }}/sponsorer/information/" class="button">Støtt {{site.title}}</a>
       </div>
     </div>
   {% for sponsor-level in site.data.sponsor-levels.sponsor-levels %}
@@ -14,10 +14,10 @@
       {% for sponsor in sponsors_in_level %}
         {% unless sponsor.hidden %}
         <div class="partner-block text-center">
-          <a href="{{ sponsor.url_target }}" rel="sponsored">
+          <a href="{{ site.url }}{{ site.baseurl }}{{ sponsor.url_target }}" rel="sponsored">
             <img
               class="partner-logo {{ sponsor.logo_orientation }}"
-              src="{{ sponsor.logo }}"
+              src="{{ site.url }}{{ site.baseurl }}{{ sponsor.logo }}"
               alt="{{ sponsor.name }} Logo" />
           </a>
         </div>
