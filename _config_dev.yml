@@ -1,7 +1,7 @@
 # Site config:
-baseurl: "/gilde25.github.io"
-url: "https://peterhpo.github.io"
-github_username:  peterhpo
+baseurl: ""  # Set to empty for local development
+url: "http://localhost:4000"  # Local development URL
+github_username: peterhpo
 relative_permalinks: false
 permalink: nyheter/:title/  # permalink: date
 timezone: Europe/Oslo
@@ -26,7 +26,6 @@ program_team_email: "gildestyret@rf.uio.no"
 sponsors_email: "gildestyret@rf.uio.no"
 visa_email: "gildestyret@rf.uio.no"
 
-# Needed for the schedule
 future: true
 
 # Other configs:
@@ -38,7 +37,7 @@ collections:  # process the _data folder
     permalink: /:collection/:name/
   organizers:
     output: false
-    permalink: /:collection/
+    permalink: /:collection/:name/
   presenters:
     output: true
     permalink: /:collection/
@@ -47,7 +46,7 @@ collections:  # process the _data folder
     permalink: /:collection/
   places:
     output: false
-    permalink: /:collection/
+    permalink: /:collection/ 
   jobs:
     output: true
     permalink: /:collection/:name/
@@ -60,7 +59,7 @@ plugins:
   - jekyll-redirect-from
   - jekyll-remote-theme
   - jekyll-seo-tag
-  - jekyll-sitemap
+  - jekyll-sitemap  # Optional: disable if not needed for local development
   - jemoji
 
 exclude:
