@@ -1,6 +1,6 @@
 
 // This file creates classes to manipulate colors. The color options can be found
-// in the $djangocon-palette sass map in _settings.scss. Here are the available
+// in the $gilde-palette sass map in _settings.scss. Here are the available
 // classes and what they do (where 'n' is the name of the color):
 // ```
 // `.theme-n` // Adds a background color to the block it's applied to. For darker
@@ -22,8 +22,8 @@
 /// Sets up basic background/foreground and link theme support for block
 /// (page-wide) elements.
 /// @param {Map} $colors The map of colors to run through
-@mixin generate-block-themes($colors: $djangocon-palette) {
-  @each $name, $color in $djangocon-palette {
+@mixin generate-block-themes($colors: $gilde-palette) {
+  @each $name, $color in $gilde-palette {
     $foreground-color: $white;
 
     .theme-#{$name} {
@@ -77,7 +77,7 @@
   }
 }
 
-@include generate-block-themes($djangocon-palette);
+@include generate-block-themes($gilde-palette);
 
 /// Take a map of colors and generates helpful classes to use them
 /// as color properties.
@@ -132,7 +132,7 @@
   }
 }
 
-@include generate-palette-helpers($djangocon-palette);
+@include generate-palette-helpers($gilde-palette);
 
 .curve1.curve1,
 .curve2.curve2 {

@@ -30,6 +30,15 @@
   }
 }
 
+.v-pad-bottom-more {
+  padding-bottom: 2rem;
+
+  @include breakpoint(medium) {
+    padding-bottom: 6rem;
+  }
+}
+
+
 .v-pad-bottom-extra {
   padding-bottom: 4rem;
 
@@ -45,6 +54,15 @@
     padding-top: 2rem;
   }
 }
+
+.v-pad-top-more {
+  padding-top: 2rem;
+
+  @include breakpoint(medium) {
+    padding-top: 6rem;
+  }
+}
+
 
 // Ensure emoji in headers display correct, size wise
 h1 img.emoji {

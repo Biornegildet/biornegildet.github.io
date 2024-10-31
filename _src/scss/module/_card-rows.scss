@@ -59,4 +59,8 @@
 
 .card-section {
   min-height: 120px;
+
+  a, a:hover {
+    color: $brand-color2
+  } ;
 }
