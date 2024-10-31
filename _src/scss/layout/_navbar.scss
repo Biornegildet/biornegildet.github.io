@@ -10,7 +10,7 @@
 
 .title-bar .menu {
   // Trick Safari into hardware acceleration
-  transform: translate3d(0,0,0);
+  transform: translate3d(0, 0, 0);
 }
 
 .title-bar .menu .menu {
@@ -89,7 +89,6 @@
   right: 0;
   left: 0;
   z-index: 10;
-
   transition: all 200ms ease;
   will-change: transform;
 
@@ -103,14 +102,48 @@
   background: $brand-color2; // Fix overlap issue
 }
 
-// tightening drop-down arrows on navigaiton parent elements
+// tightening drop-down arrows on navigation parent elements
 .dropdown.menu > li.is-dropdown-submenu-parent > a {
   padding-right: 1.1rem;
+}
+
+.is-dropdown-submenu-parent {
+  position: relative;
+
+  .menu {
+    display: none; // Initially hidden
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: $brand-color2;
+    z-index: 1000;
+
+    li {
+      white-space: nowrap;
+
+      a {
+        padding: .5rem 1rem;
+        color: $white;
+
+        &:hover {
+          background-color: lighten($brand-color2, 10%);
+        }
+      }
+    }
+  }
+
+  &.open .menu {
+    display: block;
+  }
 }
 
 @include breakpoint(smedium down) {
   .is-dropdown-submenu-parent {
     position: static; // fixing drilldown
+
+    .menu {
+      position: static; // Adjust for smaller screens
+    }
   }
 }
 

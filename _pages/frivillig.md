@@ -1,7 +1,7 @@
 ---
 description: Bli frivillig
 layout: default
-permalink: /frivillig
+permalink: /frivillig/
 published: true
 sitemap: true
 heading: 'Info til frivillige'

@@ -1,5 +1,9 @@
-<li><a href="{{ site.url }}{{ site.baseurl }}/frivillig/">Bidra</a></li>
-<li><a href="{{ site.url }}{{ site.baseurl }}/nyheter/">Nyheter</a></li>
+<li>
+  <a href="{{ site.url }}{{ site.baseurl }}/frivillig/">Bidra</a>
+</li>
+<li>
+  <a href="{{ site.url }}{{ site.baseurl }}/nyheter/">Nyheter</a>
+</li>
 <!-- <li><a href="{{ site.url }}{{ site.baseurl }}/sponsorer/">Sponsorer</a></li> -->
 <!-- <li><a href="{{ site.url }}{{ site.baseurl }}/jobs/">Jobs Board</a></li> -->
 <li class="is-dropdown-submenu-parent">
@@ -22,18 +26,15 @@
 </li>
 
 <script type="text/javascript">
-  var menuItems = document.querySelectorAll('li.is-dropdown-submenu-parent');
-  Array.prototype.forEach.call(menuItems, function(el, i){
-    el.querySelector('a').addEventListener("click",  function(event){
-      if (this.parentNode.className == "has-submenu") {
-        this.parentNode.className = "has-submenu open";
-        this.setAttribute('aria-expanded', "true");
-      } else {
-        this.parentNode.className = "has-submenu";
-        this.setAttribute('aria-expanded', "false");
-      }
-      event.preventDefault();
-      return false;
+  document.addEventListener('DOMContentLoaded', function() {
+    var menuItems = document.querySelectorAll('li.is-dropdown-submenu-parent');
+
+    Array.prototype.forEach.call(menuItems, function(el, i) {
+      var link = el.querySelector('a');
+
+      link.addEventListener("click", function(event) {
+        // We do not prevent default behavior, allowing navigation to occur.
+      });
     });
   });
 </script>
