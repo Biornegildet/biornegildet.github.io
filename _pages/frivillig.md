@@ -95,4 +95,4 @@ Har du spørsmål eller ønsker mer informasjon kan du henvende deg til Frivilli
 
 <div id="skjema" class="v-pad-bottom"></div>
 
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc9EensYj_TJJg7b3pqUWDvI0yk_M8Xn-y48ENNVSVM6wM_VQ/viewform?embedded=true" width="640" height="3169" frameborder="0" marginheight="0" marginwidth="0" >Loading…</iframe>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc9EensYj_TJJg7b3pqUWDvI0yk_M8Xn-y48ENNVSVM6wM_VQ/viewform?embedded=true" width="100%" height="3250" frameborder="0" marginheight="0" marginwidth="0" >Loading…</iframe>
