@@ -1,9 +1,5 @@
-<li>
-  <a href="{{ site.url }}{{ site.baseurl }}/frivillig/">Bidra</a>
-</li>
-<li>
-  <a href="{{ site.url }}{{ site.baseurl }}/nyheter/">Nyheter</a>
-</li>
+<li><a href="{{ site.url }}{{ site.baseurl }}/frivillig/">Bidra</a></li>
+<li><a href="{{ site.url }}{{ site.baseurl }}/nyheter/">Nyheter</a></li>
 <!-- <li><a href="{{ site.url }}{{ site.baseurl }}/sponsorer/">Sponsorer</a></li> -->
 <!-- <li><a href="{{ site.url }}{{ site.baseurl }}/jobs/">Jobs Board</a></li> -->
 <li class="is-dropdown-submenu-parent">
@@ -27,7 +23,7 @@
 
 <script type="text/javascript">
   document.addEventListener('DOMContentLoaded', function() {
-    var menuItems = document.querySelectorAll('li.is-dropdown-submenu-parent');
+  var menuItems = document.querySelectorAll('li.is-dropdown-submenu-parent');
 
     Array.prototype.forEach.call(menuItems, function(el, i) {
       var link = el.querySelector('a');
