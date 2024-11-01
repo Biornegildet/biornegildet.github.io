@@ -43,7 +43,7 @@
     display: block;
     width: 101.5%;
     height: 28vw;
-    background-image: url(/static/img/curve1-green.svg);
+    background-image: url('#{env("BASEURL")}/static/img/curve1-green.svg');
     background-repeat: no-repeat;
     background-size: 106% auto;
     background-position: -1px -14vw;

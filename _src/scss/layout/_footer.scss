@@ -39,7 +39,7 @@
     display: block;
     width: 100%;
     height: 240px;
-    background-image: url(/static/img/footer-curve.svg);
+    background-image: url('#{env("BASEURL")}/static/img/footer-curve.svg');
     background-position: top center;
     background-repeat: no-repeat;
     background-size: 100% auto;

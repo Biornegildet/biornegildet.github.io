@@ -163,6 +163,6 @@
 
 .curve1.curve1:after {
   bottom: -10vw;
-  background-image: url(/static/img/curve1.svg);
+  background-image: url('#{env("BASEURL")}/static/img/curve1.svg');
 }
 
