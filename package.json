@@ -3,10 +3,8 @@
   "version": "1.0.0",
   "description": "Biørnegildet 2025 nettside",
   "devDependencies": {
-    "all-contributors-cli": "^6.20.0",
     "css-loader": "^3.4.2",
     "mini-css-extract-plugin": "^1.0.0",
-    "npm-run-all": "^4.1.5",
     "resolve-url-loader": "^3.1.1",
     "sass": "^1.25.0",
     "sass-loader": "^8.0.2",
@@ -15,8 +13,11 @@
   },
   "scripts": {
     "build": "NODE_ENV=production webpack --config webpack.config.js",
-    "build-dev": "NODE_ENV=development webpack --config webpack.config.js",
-    "dev": "jekyll serve --watch -l --config _config_dev.yml"
+    "build-dev": "NODE_ENV=development webpack --config webpack.config.js && rm -rf node_modules/",
+    "jekyll-build": "jekyll build --config _config_dev.yml",
+    "jekyll-serve": "jekyll serve --watch -l --config _config_dev.yml --verbose",
+    "jekyll-serve-no-watch": "jekyll serve -l --config _config_dev.yml",
+    "dev": "npm install && npm run build-dev && npm run jekyll-serve"
   },
   "repository": {
     "type": "git",
