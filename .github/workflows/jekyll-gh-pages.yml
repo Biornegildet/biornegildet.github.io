@@ -18,11 +18,22 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+
+      - name: Install npm dependencies
+        run: npm install
+
+      - name: Build Webpack assets
+        run: npm run build
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
@@ -32,7 +43,7 @@ jobs:
       - name: Install Jekyll dependencies
         run: bundle install
 
-      - name: Build with Jekyll
+      - name: Build site with Jekyll
         run: bundle exec jekyll build --source ./ --destination ./_site
 
       - name: Upload artifact
