@@ -14,10 +14,8 @@
     "webpack-cli": "^4.9.1"
   },
   "scripts": {
-    "add": "all-contributors add",
-    "generate": "all-contributors generate",
-    "build": "webpack",
-    "watch-fe-dev": "webpack --watch",
+    "build": "NODE_ENV=production webpack --config webpack.config.js",
+    "build-dev": "NODE_ENV=development webpack --config webpack.config.js",
     "dev": "jekyll serve --watch -l --config _config_dev.yml"
   },
   "repository": {
