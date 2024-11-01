@@ -13,11 +13,11 @@
   },
   "scripts": {
     "build": "NODE_ENV=production webpack --config webpack.config.js",
-    "build-dev": "NODE_ENV=development webpack --config webpack.config.js && rm -rf node_modules/",
+    "build-dev": "npm install && NODE_ENV=development webpack --config webpack.config.js && rm -rf node_modules/",
     "jekyll-build": "jekyll build --config _config_dev.yml",
     "jekyll-serve": "jekyll serve --watch -l --config _config_dev.yml --verbose",
     "jekyll-serve-no-watch": "jekyll serve -l --config _config_dev.yml",
-    "dev": "npm install && npm run build-dev && npm run jekyll-serve"
+    "dev": "npm run build-dev && npm run jekyll-serve"
   },
   "repository": {
     "type": "git",
