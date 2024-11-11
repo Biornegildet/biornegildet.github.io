@@ -1,6 +1,6 @@
 # Site config:
-baseurl: "/gilde25.github.io"
-url: "https://peterhpo.github.io"
+baseurl: "/"
+url: "https://biornegildet.no"
 github_username:  peterhpo
 relative_permalinks: false
 permalink: nyheter/:title/  # permalink: date
