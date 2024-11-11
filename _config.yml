@@ -1,5 +1,5 @@
 # Site config:
-baseurl: "/"
+baseurl: ""
 url: "https://biornegildet.no"
 github_username:  peterhpo
 relative_permalinks: false
