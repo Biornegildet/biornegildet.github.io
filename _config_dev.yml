@@ -14,7 +14,7 @@ title: Biørnegildet 2025
 email: gildestyret@rf.uio.no
 description: |
   Biørnegildet 2025 - 17. - 22. Februar 2025!
-logo: /static/img/social/og.png
+logo: /static/favicons/bg_tekst_fokus.png
 festival_tema: "Mennesket i samfunnet (+/- 25 år)"
 festival_datoer: "17.-22. Februar"
 conf_year: 2025
@@ -80,7 +80,7 @@ defaults:
   - scope:
       path: ""
     values:
-      image: /static/img/social/avatar-main.png
+      image: /static/favicons/bg_tekst_fokus.png
   - scope:
       path: "_presenters"
       type: presenters

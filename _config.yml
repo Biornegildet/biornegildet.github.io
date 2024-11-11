@@ -81,7 +81,7 @@ defaults:
   - scope:
       path: ""
     values:
-      image: /static/img/social/avatar-main.png
+      image: /static/favicons/bg_tekst_fokus.png
   - scope:
       path: "_presenters"
       type: presenters
