@@ -4,7 +4,7 @@ layout: base
 order: 4
 name: Christina Eide
 photo_url: 
-role: Ballsjef
+role: Ballsjef og fungerende Arrsjef
 twitter: ''
 website: ''
 github: ''
