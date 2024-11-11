@@ -1,1 +1,1 @@
-BASEURL=/gilde25.github.io
+BASEURL=
