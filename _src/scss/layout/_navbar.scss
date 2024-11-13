@@ -68,12 +68,24 @@
   color: $white;
 }
 
+.title-bar-left {
+  float: left;
+  min-width: 200px;
+}
+
 .title-bar {
   .logo {
     display: block;
     margin: 10px 0 -20px 10px;
     width: auto;
-    height: 120; // for IE
+    height: 120px; // for IE
+
+    img {
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+      max-height: 100%;
+    }
   }
 
   .menu > li > a {
@@ -112,12 +124,36 @@
   .is-dropdown-submenu-parent {
     position: static; // fixing drilldown
   }
+
+  .headroom {
+    height: 60px;
+  }
+
+  .title-bar {
+    .logo {
+      margin-top: 5px;
+      margin-left: 10px;
+      height: 60px;
+
+      img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+      }
+    }
+
+    .menu > li > a {
+      padding: .5rem;
+      font-size: .7rem;
+    }
+  }
 }
 
 @include breakpoint(large) {
   .headroom {
     position: relative !important;
-    height: 120px;
+    height: 60px;
   }
 
   .title-bar {
@@ -126,6 +162,13 @@
       margin-left: $global-margin;
       width: 170px;
       height: 100%;
+
+      img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+      }
     }
 
     .menu > li > a {
@@ -149,6 +192,13 @@
     .logo {
       width: 200px;
       height: 100%;
+
+      img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+      }
     }
   }
 }

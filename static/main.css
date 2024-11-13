@@ -7716,11 +7716,22 @@ blockquote cite {
   color: #FFFFFF;
 }
 
+.title-bar-left {
+  float: left;
+  min-width: 200px;
+}
+
 .title-bar .logo {
   display: block;
   margin: 10px 0 -20px 10px;
   width: auto;
-  height: 120;
+  height: 120px;
+}
+.title-bar .logo img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
 }
 .title-bar .menu > li > a {
   padding: 0.6rem;
@@ -7753,6 +7764,25 @@ blockquote cite {
   .is-dropdown-submenu-parent {
     position: static;
   }
+  .headroom {
+    height: 60px;
+  }
+  .title-bar .logo {
+    margin-top: 5px;
+    margin-left: 10px;
+    width: 60px;
+    height: 60px;
+  }
+  .title-bar .logo img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .title-bar .menu > li > a {
+    padding: 0.5rem;
+    font-size: 0.7rem;
+  }
 }
 @media print, screen and (min-width: 64em) {
   .headroom {
@@ -7764,6 +7794,12 @@ blockquote cite {
     margin-left: 1rem;
     width: 170px;
     height: 100%;
+  }
+  .title-bar .logo img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
   }
   .title-bar .menu > li > a {
     font-size: 0.9rem;
@@ -7782,6 +7818,12 @@ blockquote cite {
   .title-bar .logo {
     width: 200px;
     height: 100%;
+  }
+  .title-bar .logo img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
   }
 }
 .home-content {
