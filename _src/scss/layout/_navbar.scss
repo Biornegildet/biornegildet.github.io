@@ -125,10 +125,6 @@
     position: static; // fixing drilldown
   }
 
-  .headroom {
-    height: 60px;
-  }
-
   .title-bar {
     .logo {
       margin-top: 5px;
@@ -153,7 +149,7 @@
 @include breakpoint(large) {
   .headroom {
     position: relative !important;
-    height: 60px;
+    height: 120px;
   }
 
   .title-bar {
