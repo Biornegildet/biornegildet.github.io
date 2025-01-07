@@ -2,9 +2,9 @@
 hidden: false
 layout: base
 order: 4
-name: Noel Mossblad
+name: Simonn Strand Doupovec 
 photo_url: 
-role: Blæstsjef
+role: Teknisk ansvarlig
 twitter: ''
 website: ''
 github: ''
