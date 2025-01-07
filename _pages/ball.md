@@ -10,7 +10,7 @@ heading: 'Biørneballet'
 
 
 Vi gleder oss til å arrangere nok et Biørneball, denne gangen under Biørnegildet 2025. Det vil foregå lørdag 22. februar i Gamle Logen, og [påmeldingsskjema](#skjema) ligger lengre ned på siden.
-Fristen for å melde seg på er 8. januar 2025.
+Fristen for å melde seg på er 18. januar 2025.
 
 Det blir også satt opp de vanlige kursene i forkant av ballet.
 Dansekurset blir avviklet lørdag 08. februar, mens Skikk og bruk-kurset foregår onsdag 12. februar, begge i RF-kjelleren.
