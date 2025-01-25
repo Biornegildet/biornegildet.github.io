@@ -24,7 +24,13 @@
     content: "";
     opacity: .3;
   }
-
+  
+  @media (min-width: 2200px) {
+    &:before {
+      background-size: 1000px auto;
+    }
+  }
+  
   &:after {
     position: absolute;
     bottom: 0;

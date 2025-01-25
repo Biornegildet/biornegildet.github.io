@@ -156,6 +156,12 @@
     content: "";
   }
 
+  @media (min-width: 2200px) {
+    &:after {
+      height: 100px;
+    }
+  }
+
   & + * {
     padding-top: 14vw;
   }
