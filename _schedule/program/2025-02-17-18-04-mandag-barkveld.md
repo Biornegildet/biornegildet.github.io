@@ -1,6 +1,6 @@
 ---
 title: Mandag
-abstract: For alle som har vært frivillige i Realistforeningen er Mandag med stor M et kjent konsept der de frivillige har kjelleren for seg selv som en kveld for de som legger ned så mye tid i foreningen. Under Biørnegildet ønsker vi å vise frem noe av det somn gjør RF til RF og vi ønsker å gjenskape denne stemningen.
+abstract: For alle som har vært frivillige i Realistforeningen er Mandag med stor M et kjent konsept der de frivillige har kjelleren for seg selv som en kveld for de som legger ned så mye tid i foreningen. Under Biørnegildet ønsker vi å vise frem noe av det som gjør RF til RF og vi ønsker å gjenskape denne stemningen.
 accepted: true
 category: arrangement
 date: 2025-02-17 18:04:00 +0100
