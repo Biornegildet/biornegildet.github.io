@@ -8,8 +8,8 @@ layout: session-details
 permalink: /program/fredag-utendors/
 presenter_slugs:
 image: true
-image: /static/img/fest.jpg
-room: 'RF-kjelleren'
+# image: /static/img/fest.jpg
+room: 'Fredrikkeplassen'
 published: true
 sitemap: false
 slides_url: ''
