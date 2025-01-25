@@ -22,6 +22,20 @@
   }
 }
 
+.section-pad-small {
+  position: relative;
+  z-index: 0;
+
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+  @include breakpoint(medium) {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+
 .v-pad-bottom {
   padding-bottom: 1rem;
 
