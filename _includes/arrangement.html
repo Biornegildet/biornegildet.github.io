@@ -12,43 +12,55 @@
     {% endif %}
 
     {{ linkStart }}
-      <section class="event">
-        {% if post.title %}
-          <h3 class="event-title">{{ post.title }}</h3>
-        {% endif %}
+      <section class="event integrated-layout">
+        <div class="event-header">
+          {% if post.image %}
+            <img class="event-image" src="{{ site.url }}{{ site.baseurl }}{{ post.image }}" alt="Illustrative image for the event {{ post.title }}">
+          {% endif %}
         
-        {% if post.date %}
-          <p class="time">{{ post.date | date: "%H:%M" }}</p>
-        {% endif %}
-        
-        {% if post.room %}
-          <p class="location">{{ post.room }}</p>
-        {% endif %}
-        
-        {% if post.presenters %}
-          <p class="event-byline">
-            {% for presenter in post.presenters %}
-              {% if presenter.photo_url %}
-                <img class="avatar" src="{{ site.url }}{{ site.baseurl }}{{ presenter.photo_url }}" alt="Photo of {{ presenter.name }}" />
+          <div class="event-details">
+            {% if post.title %}
+              <h3 class="event-title">{{ post.title }}</h3>
+            {% endif %}
+
+            <div class="event-meta">
+              {% if post.date %}
+                <p class="time">{{ post.date | date: "%H:%M - %d %b %Y" }}</p>
               {% endif %}
-              {{ presenter.name }}
-              {% if presenter.pronouns %}
-                ({{ presenter.pronouns }})
+
+              {% if post.room %}
+                <p class="location">{{ post.room }}</p>
               {% endif %}
-              {% if forloop.last == false %}
-                , 
-              {% endif %}
-            {% endfor %}
-          </p>
-        {% endif %}
+            </div>
+            
+            {% if post.presenter_slugs %}
+              <p class="event-byline">
+                {% for presenter_slug in post.presenter_slugs %}
+                {% assign presenter = site.presenters | where: "slug", presenter_slug | first %}
+                  {% if presenter %}
+                    <p class="event-presenter">
+
+                      {% if presenter.square_photo_url %}
+                      <img class="avatar" src="{{ site.url }}{{ site.baseurl }}{{ presenter.square_photo_url }}" alt="Photo of {{ presenter.name }}" />
+                      {% elsif presenter.photo_url %}
+                      <img class="avatar" src="{{ site.url }}{{ site.baseurl }}{{ presenter.photo_url }}" alt="Photo of {{ presenter.name }}" />
+                      {% endif %}
+                      {{ presenter.name }}
+                      {% if presenter.pronouns %}
+                      ({{ presenter.pronouns }})
+                      {% endif %}
+                    </p>
+                  {% endif %}
+                {% endfor %}
+              </p>
+            {% endif %}
+          </div>
+        </div>
         
         {% if post.abstract %}
           <p class="description">{{ post.abstract }}</p>
         {% endif %}
         
-        {% if post.image %}
-          <img src="{{ site.url }}{{ site.baseurl }}{{ post.image }}" alt="Illustrerende bilde for arrangementet {{ post.title }}">
-        {% endif %}
       </section>
     {{ linkEnd }}
   {% endunless %}
