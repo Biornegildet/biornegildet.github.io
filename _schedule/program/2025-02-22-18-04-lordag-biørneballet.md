@@ -4,12 +4,12 @@ abstract: Biørneballet
 accepted: true
 category: fest
 date: 2025-02-22 18:04:00 +0100
-image: ''
+# image: ''
 layout: session-details
 permalink: /program/biørneballet/
 published: true
 room: 'Gamle logen'
-sitemap: true
+sitemap: false
 slides_url: ''
 summary: ''
 tags:
