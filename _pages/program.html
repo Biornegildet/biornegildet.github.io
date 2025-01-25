@@ -2,8 +2,8 @@
 description: Biørnegildet 2025 | Program
 heading: Program
 layout: default
-permalink: /program/
-published: false
+permalink: /program-test/
+published: true
 sitemap: false
 title: Program
 ---
@@ -63,11 +63,6 @@ title: Program
 <section class="section-pad schedule" id="Onsdag">
   <div class="row column">
     <h2 class="day">Onsdag - 19. februar</h2>
-    {% comment %}
-    <p class="lead">
-      Tutorials are a separate registration and are TBD per session. Buy tutorial tickets before they sell out!
-    </p>
-    {% endcomment %}
     <ul class="schedule">
       {% for post in site.schedule %}
         {% capture day %}{{ post.date | date: "%A" }}{% endcapture %}
@@ -84,11 +79,6 @@ title: Program
 <section class="section-pad schedule" id="Torsdag">
   <div class="row column">
     <h2 class="day">Torsdag - 20. februar</h2>
-    {% comment %}
-    <p class="lead">
-      Tutorials are a separate registration and are TBD per session. Buy tutorial tickets before they sell out!
-    </p>
-    {% endcomment %}
     <ul class="schedule">
       {% for post in site.schedule %}
         {% capture day %}{{ post.date | date: "%A" }}{% endcapture %}
@@ -105,11 +95,6 @@ title: Program
 <section class="section-pad schedule" id="Fredag">
   <div class="row column">
     <h2 class="day">Fredag - 21. februar</h2>
-    {% comment %}
-    <p class="lead">
-      Tutorials are a separate registration and are TBD per session. Buy tutorial tickets before they sell out!
-    </p>
-    {% endcomment %}
     <ul class="schedule">
       {% for post in site.schedule %}
         {% capture day %}{{ post.date | date: "%A" }}{% endcapture %}
@@ -126,9 +111,9 @@ title: Program
 <section class="section-pad schedule" id="Lørdag">
   <div class="row column">
     <h2 class="day">Lørdag - 22. februar</h2>
-    <p class="lead">
-      Denne dagen skjer kun den tradisjonelle avslutningsfesten, <b>Biørneballet</b>. <br>For mer info se <a href="{{ site.url }}{{ site.baseurl }}/ball">siden om ballet</a>.
-    </p>
+      <p class="lead">
+        Denne dagen skjer kun den tradisjonelle avslutningsfesten, <b>Biørneballet</b>. <br>For mer info se <a href="{{ site.url }}{{ site.baseurl }}/ball">siden om ballet</a>.
+      </p>
     <ul class="schedule">
       {% for post in site.schedule %}
         {% capture day %}{{ post.date | date: "%A" }}{% endcapture %}
