@@ -12,7 +12,7 @@ image-presenter-square: true
 image: /static/img/smaking.jpg
 room: 'RF-kjelleren'
 published: true
-sitemap: false
+sitemap: true
 slides_url: ''
 summary: ''
 tags:

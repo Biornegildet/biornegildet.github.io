@@ -11,7 +11,7 @@ presenter_slugs:
 # image: /static/img/organizers/peter.jpg
 room: 'Foajeen i Vilhelm Bjerknes Hus'
 published: true
-sitemap: false
+sitemap: true
 slides_url: ''
 summary: ''
 tags:

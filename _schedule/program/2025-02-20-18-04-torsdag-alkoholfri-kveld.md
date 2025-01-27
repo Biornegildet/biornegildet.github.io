@@ -10,7 +10,7 @@ presenter_slugs:
 # image: /static/img/organizers/peter.jpg
 room: 'Foajeen'
 published: true
-sitemap: false
+sitemap: true
 slides_url: ''
 summary: ''
 tags:

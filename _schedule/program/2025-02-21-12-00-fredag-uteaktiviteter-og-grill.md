@@ -11,7 +11,7 @@ image: true
 # image: /static/img/fest.jpg
 room: 'Fredrikkeplassen'
 published: true
-sitemap: false
+sitemap: true
 slides_url: ''
 summary: ''
 tags:

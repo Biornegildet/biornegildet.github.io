@@ -10,8 +10,8 @@ presenter_slugs:
 image: true
 image: /static/img/organizers/peter.jpg
 room: 'RF-kjelleren'
-published: false
-sitemap: false
+published: true
+sitemap: true
 slides_url: ''
 summary: ''
 tags:

@@ -11,7 +11,7 @@ image: true
 image: /static/img/fest.jpg
 room: 'Vilhelm Bjerknes hus'
 published: true
-sitemap: false
+sitemap: true
 slides_url: ''
 summary: ''
 tags:

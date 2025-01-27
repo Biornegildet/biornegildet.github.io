@@ -9,7 +9,7 @@ layout: session-details
 permalink: /program/biørneballet/
 published: true
 room: 'Gamle logen'
-sitemap: false
+sitemap: true
 slides_url: ''
 summary: ''
 tags:

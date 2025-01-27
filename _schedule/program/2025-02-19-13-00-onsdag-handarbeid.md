@@ -10,7 +10,7 @@ presenter_slugs:
 # image: /static/img/realfrokost.jpg
 room: 'RF-kjelleren'
 published: true
-sitemap: false
+sitemap: true
 slides_url: ''
 summary: ''
 tags:
