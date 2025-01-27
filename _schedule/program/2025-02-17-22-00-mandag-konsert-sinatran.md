@@ -8,10 +8,10 @@ layout: session-details
 permalink: /program/konsert/sinatran/
 presenter_slugs:
 image: true
-image: /static/img/organizers/peter.jpg
+# image: /static/img/organizers/peter.jpg
 room: 'RF-kjelleren'
-published: true
-sitemap: true
+published: false
+sitemap: false
 slides_url: ''
 summary: ''
 tags:
