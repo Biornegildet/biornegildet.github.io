@@ -2,6 +2,8 @@
 description: Bli frivillig
 layout: default
 permalink: /frivillig/
+redirect_from:
+- /frivilliginfo/
 published: true
 sitemap: true
 heading: 'Info til frivillige'
@@ -88,7 +90,7 @@ Alle kan ønske seg jobber, og de fleste får oppfylt ønsket sitt. Men – vi k
 
 <hr>
 
-Har du spørsmål eller ønsker mer informasjon kan du henvende deg til Frivilligansvarlig Nathaniel på [nathafjell@gmail.com](mailto:nathafjell@gmail.com)
+Har du spørsmål eller ønsker mer informasjon kan du henvende deg til Gildesjef Niamh eller Gildesekretær på [gildet@rf.uio.no](mailto:gildet@rf.uio.no)
 
 <div id="skjema" class="v-pad-bottom"></div>
 
