@@ -1,6 +1,6 @@
 ---
-title: Realfrokost
-abstract: For de av dere som er tidlig på campus har vi tilbud om en lavterskel frokost
+title: Realfrokost m/foredrag
+abstract: For de av dere som er tidlig på campus har vi tilbud om en lavterskel frokost. Denne gangen med foredrag fra Frida Westby.
 accepted: true
 category: arrangement
 date: 2025-02-20 08:00:00 +0100

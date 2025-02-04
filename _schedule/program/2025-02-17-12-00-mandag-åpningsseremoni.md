@@ -20,4 +20,4 @@ tags:
 - Mandag
 ---
 
-Høytidelig åpning av Biørnegildet 2025. Her vil vi få musikalske innslag fra studentorchesteret Biørneblæs og Realistforeningen sitt kor Ursi Canentis samt taler fra ulike deler av miljøet på MatNat før vi alle skal spise kake for å feire at Biørnegildet endelig er i gang for xxx. gang.
+Høytidelig åpning av Biørnegildet 2025. Her vil vi få musikalske innslag fra studentorchesteret Biørneblæs og Realistforeningen sitt kor Ursi Canentis samt taler fra ulike deler av miljøet på MatNat før vi alle skal spise kake for å feire at Biørnegildet endelig er i gang for 29. gang.
