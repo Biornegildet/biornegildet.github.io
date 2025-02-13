@@ -21,4 +21,8 @@ tags:
 - Onsdag
 ---
 
-Nærmere info om arrangementet kommer siden.
+Vi er glade for å få besøk av Sverre Diesen under Biørnegildet 2025. Han er en norsk hæroffiser med generals grad, som fra 2005 til 2009 var Norges forsvarssjef. Diesen har en lang karriere innenfor militæret, blant annet som forsker ved forsvarets forskningsinstitutt (FFI). I tillegg er han utdannet silivingeniør fra Norges tekniske høgskole.
+
+Diesen anses for å ha hatt betydelig innflytelse på norsk militær tenking og planlegging. Han har bidratt til og skrevet flere fagbøker, herunder Militær strategi (2000), Fornyelse eller forvitring (2011) og Strategi (2012).
+
+Vi gleder oss til foredraget han skal holde og håper du tar turen!

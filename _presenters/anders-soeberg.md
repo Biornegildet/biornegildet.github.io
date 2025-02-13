@@ -8,5 +8,4 @@ slug: anders-soeberg
 website: 
 ---
 
-
-<!-- Flavor text -->
+Tidligere Fagsjef i Realistforeningen, IFI-student og vinneren av Norsk Regnesentrals pris for beste masteroppgave i 2024.
