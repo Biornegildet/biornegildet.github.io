@@ -20,19 +20,24 @@
         
           <div class="event-details">
             {% if post.title %}
-              <h3 class="event-title">{{ post.title }}</h3>
+              <div class="event-title-and-price">
+                <h3 class="event-title">{{ post.title }}</h3>
+                {% if post.price and post.internprice %}
+                  <p class="price">Pris: {{ post.price }} kr / {{ post.internprice }} kr</p>
+                {% endif %}
+              </div>
             {% endif %}
-
+          
             <div class="event-meta">
               {% if post.date %}
                 <p class="time">{{ post.date | date: "%H:%M - %d %b %Y" }}</p>
               {% endif %}
-
+            
               {% if post.room %}
                 <p class="location">{{ post.room }}</p>
               {% endif %}
             </div>
-            
+                        
             {% if post.presenter_slugs %}
               <p class="event-byline">
                 {% for presenter_slug in post.presenter_slugs %}
