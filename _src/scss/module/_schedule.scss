@@ -61,17 +61,17 @@
   .event-title {
     margin-bottom: 0.5rem;
     font-size: 1.2rem;
-    flex-grow: 1; // Allow flexibility for responsive adjustment
+    flex-grow: 1;
   }
   
   .price {
     font-size: 1em;
     font-weight: $global-weight-semibold;
-    color: $black; // Ensure the text is black
-    background-color: rgba($brand-color2, 0.5); // Light gray background color
-    padding: 0.2em 0.5em; // Add some padding for better aesthetics
-    border-radius: 4px; // Give it slightly rounded corners
-    margin: 0; // Remove margin to align properly
+    color: $black;
+    background-color: rgba($brand-color2, 0.5);
+    padding: 0.2em 0.5em;
+    border-radius: 4px;
+    margin: 0;
   }
   
   
