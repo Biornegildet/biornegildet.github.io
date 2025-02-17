@@ -1,6 +1,6 @@
 ---
-title: Foredrag/Panelsamtale med Sverre Disen 
-abstract: Få med deg en spennende samtale om XXXX
+title: Foredrag med Sverre Disen 
+abstract: Få med deg foredraget om utviklingen av forsvaret, særlig med tanke på våpenteknologi
 accepted: true
 category: arrangement
 date: 2025-02-19 18:04:00 +0100
