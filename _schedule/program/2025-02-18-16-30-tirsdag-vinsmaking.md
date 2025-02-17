@@ -3,10 +3,11 @@ title: Vinsmaking
 abstract: Vinsmaking
 accepted: true
 category: arrangement
-date: 2025-02-18 16:30:00 +0100
+date: 2025-02-19 16:30:00 +0100
 layout: session-details
 permalink: /program/vinsmaking/
 presenter_slugs:
+# - ole-ivar
 image-presenter-square: true
 image: /static/img/smaking.jpg
 room: 'RF-kjelleren'
