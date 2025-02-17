@@ -15,6 +15,8 @@ published: true
 sitemap: true
 slides_url: ''
 summary: ''
+price: 175
+internprice: 125
 tags:
 - Smaking
 - Alkohol

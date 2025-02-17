@@ -7,7 +7,7 @@ date: 2025-02-19 16:30:00 +0100
 layout: session-details
 permalink: /program/vinsmaking/
 presenter_slugs:
-# - ole-ivar
+- ole-ivar
 image-presenter-square: true
 image: /static/img/smaking.jpg
 room: 'RF-kjelleren'
@@ -15,6 +15,8 @@ published: true
 sitemap: true
 slides_url: ''
 summary: ''
+price: 175
+internprice: 125
 tags:
 - Smaking
 - Alkohol

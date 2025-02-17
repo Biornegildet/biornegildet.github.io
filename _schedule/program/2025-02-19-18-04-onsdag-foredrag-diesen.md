@@ -14,6 +14,8 @@ published: true
 sitemap: true
 slides_url: ''
 summary: ''
+price: 60
+internprice: 0
 tags:
 - Barkveld
 - Foredrag
