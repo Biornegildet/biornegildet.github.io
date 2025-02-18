@@ -59,14 +59,14 @@
   
     @media (max-width: 900px) {
       flex-direction: column;
-      align-items: flex-start;
+      align-items: center;
   
       .event-title {
         margin-bottom: 0.5rem;
       }
   
       .price {
-        align-self: flex-start;
+        align-self: center;
       }
     }
   }
