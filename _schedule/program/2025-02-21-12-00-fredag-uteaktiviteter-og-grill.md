@@ -19,4 +19,4 @@ tags:
 - Fredag
 ---
 
-Nærmere info om arrangementet kommer siden.
+For nærmere info om arrangementet sjekk våre sosiale medier.

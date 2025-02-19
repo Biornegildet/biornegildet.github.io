@@ -25,4 +25,4 @@ tags:
 
 Festivalen avsluttes tradisjonelt med en stor fest hvor andre foreninger fra hele UiO inviteres til å ta med seg sine tradisjoner og konsepter til vårt hi og skal dele dette med dere alle fra hver sine utsalgssteder. Realfagsbiblioteket selv stiller med den tradisjonsrike og nerdete “Pub at the End of the Universe.”
 
-Nærmere info om underholdningen publiseres senere.
+For nærmere info om underholdningen se våre sosiale medier.
