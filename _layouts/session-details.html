@@ -14,7 +14,9 @@ layout: base
     <a href="https://time.is/compare/{{ page.date | date: "%I%M%p_%d_%B_%Y" }}_in_Oslo" aria-label="View talk time on time.is">:calendar:</a>
     {% if page.end_date %} to {{ page.end_date | date: "%H:%M" }}{% endif %}, i {{ page.room }}
     <br>
-    Ordinær pris: {{ page.price }} kr / <a href="/nyheter/festivalpass/">Festivalpass {{ page.internprice }} kr</a>:
+    {% if page.price and page.internprice %}
+      Ordinær pris: {{ page.price }} kr / <a href="/nyheter/festivalpass/">Festivalpass {{ page.internprice }} kr</a>:
+    {% endif %}
   </p>
 
 </header>
