@@ -1,6 +1,6 @@
 ---
 title: Ølsmaking
-abstract: Ølsmaking med Petter Bøckman
+abstract: Ølsmaking med Petter Bøckman og Ståle Askerød Johansen
 accepted: true
 category: arrangement
 date: 2025-02-20 16:30:00 +0100
@@ -8,6 +8,7 @@ layout: session-details
 permalink: /program/oelsmaking/
 presenter_slugs:
 - petter-boeckman
+- staale-johansen
 image-presenter-square: true
 image: /static/img/smaking.jpg
 room: 'RF-kjelleren'
