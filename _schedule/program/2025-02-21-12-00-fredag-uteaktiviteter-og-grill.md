@@ -13,6 +13,7 @@ published: true
 sitemap: true
 slides_url: ''
 summary: ''
+cancelled: true
 tags:
 - Alkoholfri
 - Utendørs
